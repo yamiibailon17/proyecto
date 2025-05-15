@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopción de Perros</title>
+    <link rel="stylesheet" href="css/inicio.css">
+</head>
+
+<body>
+    <!-- Sección del reloj y bienvenida -->
+    <div class="reloj" id="reloj"></div>
+
+    <div class="bienvenida">
+        <div class="mensaje-bienvenida">
+            <h1>¡Bienvenidxs!</h1>
+            <p>A nuestra página de adopción, donde encontrarás un catálogo de nuestros perritos. 
+               Podrás dar en adopción, comprar en nuestra tienda en línea y donar.</p>
+        </div>
+        <div class="slider">
+            <img src="img/fondo5.jpeg" alt="Imagen 1">
+            <img src="img/fondo2.jpg" alt="Imagen 2">
+            <img src="img/fondo3.jpg" alt="Imagen 3">
+            <img src="img/fondo4.jpg" alt="Imagen 4">
+            <img src="img/fondo5.jpg" alt="Imagen 5">
+        </div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="quienes.html">Quiénes Somos</a></li>
+                <li><a href="mision.html">Misión</a></li>
+                <li><a href="vision.html">Visión</a></li>
+                <li><a href="carritocompras.html">Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de adopción con diseño por columnas -->
+    <section id="perritos" class="container">
+        <div class="perrito-row">
+            <div class="card">
+                <h3>Capuchino</h3>
+                <img src="img/capu.jpg" alt="Capuchino">
+                <a href="php/infomascotas.php?mascota=Capuchino"><button>Adoptar</button></a>
+            </div>
+            <div class="card">
+                <h3>Zeus</h3>
+                <img src="img/fondo1.jpg" alt="Zeus">
+                <a href="php/infomascotas.php?mascota=Zeus"><button>Adoptar</button></a>
+            </div>
+        </div>
+        <div class="perrito-row">
+            <div class="card">
+                <h3>Luna</h3>
+                <img src="img/luna.jpg" alt="Luna">
+                <a href="php/infomascotas.php?mascota=Luna"><button>Adoptar</button></a>
+            </div>
+            <div class="card">
+                <h3>Manchas</h3>
+                <img src="img/manchas.jpg" alt="Manchas">
+                <a href="php/infomascotas.php?mascota=Manchas"><button>Adoptar</button></a>
+            </div>
+        </div>
+        <div class="perrito-row">
+            <div class="card">
+                <h3>Kylie</h3>
+                <img src="img/bonito.jpg" alt="Kylie">
+                <a href="php/infomascotas.php?mascota=Kylie"><button>Adoptar</button></a>
+            </div>
+            <div class="card">
+                <h3>Sanson</h3>
+                <img src="img/sanson.jpg" alt="Sanson">
+                <a href="php/infomascotas.php?mascota=Sanson"><button>Adoptar</button></a>
+            </div>
+        </div>
+        <div class="perrito-row">
+            <div class="card">
+                <h3>Nube</h3>
+                <img src="img/gato2.jpg" alt="Nube">
+                <a href="php/infomascotas.php?mascota=Nube"><button>Adoptar</button></a>
+            </div>
+            <div class="card">
+                <h3>Bagheera</h3>
+                <img src="img/bagheera.jpg" alt="Bagheera">
+                <a href="php/infomascotas.php?mascota=Bagheera"><button>Adoptar</button></a>
+            </div>
+        </div>
+        <div class="perrito-row">
+            <div class="card">
+                <h3>Nova y Onix</h3>
+                <img src="img/gato1.jpg" alt="Nova y Onix">
+                <a href="infomascotas.php?mascota=NovayOnix"><button>Adoptar</button></a>
+            </div>
+            <div class="card">
+                <h3>Chispa</h3>
+                <img src="img/gato3.jpg" alt="Chispa">
+                <a href="php/infomascotas.php?mascota=Chispa"><button>Adoptar</button></a>
+            </div>
+        </div>
+        <div class="perrito-row">
+            <div class="card">
+                <h3>Copito</h3>
+                <img src="img/copito.jpg" alt="Copito">
+                <a href="php/infomascotas.php?mascota=Copito"><button>Adoptar</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto y redes sociales -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <h3>Redes Sociales</h3>
+        <p>Facebook: Huellitas Felices</p>
+        <p>Instagram: huellitas_felices</p>
+        <p>Ubicación: Tijuana B.C, Zona Rio</p>
+        <p>Email: huellasfelices@gmail.com</p>
+        <p>Teléfono: 664-115-3201</p>
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="boton-donar" onclick="window.location.href='php/usuarioDonacion.php'">¿Desea donar?</button>
+            <button class="boton-donar" onclick="window.location.href='php/recibir.php'">¿Desea dar en adopción a un lomito?</button>
+        </div>
+    </section>
+
+    <!-- Script para reloj -->
+    <script src="js/hora.js"></script>
+</body>
+</html>
